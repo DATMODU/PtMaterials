@@ -1,3 +1,5 @@
+// example1/simple.c
+
 #include "Python.h"
 
 static PyObject* add_func(PyObject* self, PyObject* args) {
@@ -20,14 +22,14 @@ static PyMethodDef simpleMethods[] = {
 
 static struct PyModuleDef simpleModule = {
 	PyModuleDef_HEAD_INIT,
-	"simple",
+	"swig_ex1",
 	NULL,
 	-1,
 	simpleMethods
 };
 
 PyMODINIT_FUNC
-PyInit_simple(void)
+PyInit_swig_ex1(void)
 {
     return PyModule_Create(&simpleModule);
 }

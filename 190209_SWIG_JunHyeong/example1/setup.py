@@ -3,7 +3,7 @@ from setuptools import setup, Extension
 
 ext_modules = [
 	Extension(
-		name="swig_ex1.simple",
+		name="swig_ex1",
 		sources=["simple.c"]
 	),
 ]
