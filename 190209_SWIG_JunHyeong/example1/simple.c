@@ -6,7 +6,7 @@ static PyObject* add_func(PyObject* self, PyObject* args) {
 	int arg1 = 0;
 	int arg2 = 0;
 
-	if ( !PyArg_ParseTuple(args, "ll", &arg1, &arg2) ) {
+	if ( !PyArg_ParseTuple(args, "ii", &arg1, &arg2) ) {
 		return NULL;
 	}
 
