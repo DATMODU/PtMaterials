@@ -8,7 +8,7 @@ packages = [
 ext_modules = [
 	Extension(
 		name="_swig_ex2",
-		sources=["simple.c", "simple_wrap.c"],
+		sources=["ex2.c", "ex2_wrap.c"],
 	),
 ]
 

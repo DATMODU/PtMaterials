@@ -1,5 +1,4 @@
-// example1/simple.c
-
+// example1/ex1.c
 #include "Python.h"
 
 static PyObject* add_func(PyObject* self, PyObject* args) {
