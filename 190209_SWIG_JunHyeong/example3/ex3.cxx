@@ -1,5 +1,4 @@
 // example3/ex3.cxx
-
 #include "ex3.h"
 
 PyObject* sum_tuple(PyObject* input_tuple) {
@@ -43,7 +42,7 @@ PyObject* concat_list(PyObject* input_list1, PyObject* input_list2) {
     const Py_ssize_t ret_list_size = list1_size + list2_size;
 	Py_ssize_t i = 0;
 
-    PyListObject* ret_list = PyList_New(ret_list_size);
+    PyObject* ret_list = PyList_New(ret_list_size);
 	PyObject* iter1 = PyObject_GetIter(input_list1);
 	PyObject* iter2 = PyObject_GetIter(input_list2);
 

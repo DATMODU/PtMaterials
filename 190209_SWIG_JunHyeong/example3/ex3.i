@@ -1,5 +1,4 @@
 // example3/ex3.i
-
 %module swig_ex3
 
 %{

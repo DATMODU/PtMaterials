@@ -1,4 +1,7 @@
 // example3/ex3.h
+#pragma once
+
+#include <Python.h>
 
 extern "C" {
     PyObject* sum_tuple(PyObject* input_tuple);
