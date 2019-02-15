@@ -4,6 +4,11 @@ import numpy
 
 from setuptools import setup, Extension
 
+install_requires = [
+	"numpy",
+	"matplotlib",
+]
+
 packages = [
 	"swig_ex5",
 	"swig_ex5.core",
@@ -33,6 +38,7 @@ setup(
 	name="swig_ex5",
 	version="1.0.0",
 	description="SWIG Example5",
+	install_requires=install_requires,
 	ext_modules=ext_modules,
 	packages=packages,
 	package_dir={"swig_ex5": "src"},

@@ -3,7 +3,5 @@
 
 #include <Python.h>
 
-extern "C" {
-    PyObject* get_timestamp_13d();
-    PyObject* get_timestamp_16d();
-}
+PyObject* get_timestamp_13d();
+PyObject* get_timestamp_16d();

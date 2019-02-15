@@ -3,6 +3,10 @@ import numpy
 
 from setuptools import setup, Extension
 
+install_requires = [
+	"numpy",
+]
+
 packages = [
 	"swig_ex4",
 ]
@@ -19,6 +23,7 @@ setup(
 	name="swig_ex4",
 	version="1.0.0",
 	description="SWIG Example4",
+	install_requires=install_requires,
 	ext_modules=ext_modules,
 	packages=packages,
 	package_dir={"swig_ex4": ""},
