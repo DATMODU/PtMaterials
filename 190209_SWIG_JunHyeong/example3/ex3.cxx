@@ -2,6 +2,10 @@
 #include <iostream>
 #include "ex3.h"
 
+
+/////////////////////////////////////////
+// ex3_1 ////////////////////////////////
+
 void print_in_cxx() {
 	std::cout << "hello world !" << std::endl;
 }
@@ -9,6 +13,10 @@ void print_in_cxx() {
 void print_in_cxx(char* str) {
 	std::cout << str << std::endl;
 }
+
+
+/////////////////////////////////////////
+// ex3_2 ////////////////////////////////
 
 MyClass::MyClass() {
 	my_value = 10;
@@ -25,6 +33,10 @@ void MyClass::set_my_value(int val) {
 int MyClass::get_my_value() {
 	return my_value;
 }
+
+
+/////////////////////////////////////////
+// ex3_3 ////////////////////////////////
 
 PyObject* sum_tuple(PyObject* input_tuple) {
 	if ( !PyTuple_Check(input_tuple) ) {
@@ -80,11 +92,13 @@ PyObject* concat_list(PyObject* input_list1, PyObject* input_list2) {
 
 	while( item = PyIter_Next(iter1) ){
 		PyList_SetItem(ret_list, i, item);
+		Py_DECREF(item);
 		i++;
 	}
 
 	while( item = PyIter_Next(iter2) ){
 		PyList_SetItem(ret_list, i, item);
+		Py_DECREF(item);
 		i++;
 	}
 

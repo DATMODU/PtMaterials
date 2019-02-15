@@ -3,9 +3,16 @@
 
 #include <Python.h>
 
+
+/////////////////////////////////////////
+// ex3_1 ////////////////////////////////
+
 void print_in_cxx();
 void print_in_cxx(char* str);
 
+
+/////////////////////////////////////////
+// ex3_2 ////////////////////////////////
 #define TMP_NUM 123456
 enum ANIMAL { CAT, DOG, TIGER, ELEPHANT, MONKEY };
 
@@ -36,6 +43,10 @@ public:
 private:
 	int my_value;
 };
+
+
+/////////////////////////////////////////
+// ex3_3 ////////////////////////////////
 
 PyObject* sum_tuple(PyObject* input_tuple);
 PyObject* concat_list(PyObject* input_list1, PyObject* input_list2);
