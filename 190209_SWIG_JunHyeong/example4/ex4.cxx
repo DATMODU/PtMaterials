@@ -21,7 +21,7 @@ void create_np_array(int* out_arr, int out_size) {
 
 void sum_two_np_array(int* out_arr, int out_size, int* in_arr1, int in_size1, int* in_arr2, int in_size2) {
 	for ( int i=0 ; i<out_size ; i++ ) {
-		out_arr[i] = in_arr1[i] + in_arr2[2];
+		out_arr[i] = in_arr1[i] + in_arr2[i];
 	}
 }
 
