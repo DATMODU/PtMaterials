@@ -121,3 +121,6 @@ dmypy.json
 
 # Visual Studio Code
 .vscode
+
+# Google Drive Samples
+20190413_GoogleDrive_JunHyeong/*.json
