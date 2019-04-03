@@ -124,3 +124,4 @@ dmypy.json
 
 # Google Drive Samples
 190413_GoogleDrive_JunHyeong/*.json
+190413_GoogleDrive_JunHyeong/*.pickle
